@@ -33,10 +33,22 @@ class AddProductRequest extends FormRequest
     {
         return [
             'name' => 'required|max:50|min:3|string',
-            'image' => '',
+            'image' => 'image|required',
             'price' => 'required|digits_between:1,4',
-            'description' => 'required|max:50|min:3|string',
+            'description' => 'required|max:2000|min:3|string',
             'category' => 'required'
         ];
     }
+
+     public function messages()
+     {
+        return [
+            'required' => 'Ovo polje je obavezno',
+            'max' => 'Previše znakova',
+            'min' => 'Potrebna su najmanje 3 znaka',
+            'image.required' => 'Odaberite sliku',
+            'digits_between' => 'Cijena mora biti broj sa 1 do 4 znamenke',
+        ];
+    }
+
 }

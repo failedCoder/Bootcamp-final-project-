@@ -14,19 +14,36 @@ class ProductController extends Controller
     {
     	return view('frontend.index');
     }
+
     public function add(AddProductRequest $request)
     {
+    	$image = $request->file('image');
+		$ext = $image->extension();
+		$name = request('name').'.';
+		$path=$image->storeAs('products',$name.$ext);
+
+
+
     	Product::create([
     		'name' => request('name'),
     		'price' => request('price'),
     		'description' => request('description'),
     		'category' => request('category'),
+    		'image' => $path,
     	]);
+    	//dd($image->path);
+
 
     	session()->flash('message','Dodali ste novi proizvod!');
 
-    	return back();
+    	return redirect('/home');    
     }
-    //poruke ako ne prođe validajciu!!
-    //dodavanje slike
+
+    public function edit()
+    {
+
+    }
+
+      
+   
 }

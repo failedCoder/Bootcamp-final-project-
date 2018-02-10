@@ -22,14 +22,8 @@
     <nav class="navbar navbar-dark bg-secondary">
         <a class="navbar-brand" href="/home">Utopija</a>
         
-        <a class="nav-link btn btn-outline-light btn-sm" href="/home/dodaj">Dodaj</a>
-        <a class="nav-link btn btn-outline-light btn-sm" href="/home/uredi">Uredi</a>
-        <a class="nav-link btn btn-outline-light btn-sm" href="/home/obriši">Obriši</a>
-        
         <form action="{{ route('logout') }}" method="POST">
             {{ csrf_field() }}
-            <!--<input type="submit" name="logout" value="Logout"> -->
-            
             <input class="btn btn-secondary btn-sm" type="submit" name="logout" value="Logout">
         </form>                               
     </nav>
