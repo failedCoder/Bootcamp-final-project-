@@ -16,7 +16,7 @@ Route::get('home/uredi/{product}','HomeController@editForm');
 
 Route::patch('home/uredi/{product}','ProductController@edit');
 
-Route::delete('home/obriši/{product}','HomeController@delete');  
+Route::delete('home/obriši/{product}','ProductController@delete');  
 
 Route::get('/ponuda','ProductController@index');
 

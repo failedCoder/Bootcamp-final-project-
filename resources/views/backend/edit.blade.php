@@ -6,6 +6,11 @@
 <br>
 
 <div class="col-md-4 offset-md-4 ">
+  <button type="button" class="close" aria-label="Close">
+  <a href="/home">
+  <span aria-hidden="true">&times;</span>
+  </a>
+</button>
 
 	<p class="h3">Uredi proizvod:</p>
 	<hr>

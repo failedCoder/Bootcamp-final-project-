@@ -16,7 +16,12 @@
  <br>
 
 <ul class="list-group">
-
+    @if ($flash=session('message'))
+    <div class="alert alert-success" role="alert" id="success-alert">
+      {{ $flash }}
+    </div>    
+    @endif
+    
  		
   <table class="table table-hover">
   <thead>
@@ -38,7 +43,12 @@
       	<a class="btn btn-outline-warning" href="home/uredi/{{$product->id}}" role="button">Uredi proizvod</a>
       </td>
       <td class="align-middle">
-      	<a class="btn btn-outline-danger" href="home/obriši/{{$product->id}}" role="button">Obriši proizvod</a>
+        <form method="POST" action="home/obriši/{{$product->id}}" 
+          onclick="return confirm('JESTE LI SIGURNI DA ŽELITE OBRISATI OVAJ PROIZVOD?')">
+            {{ csrf_field() }}
+           <input type="hidden" name="_method" value="DELETE">
+           <input type="submit" name="delete" class="btn btn-outline-danger" value="Obriši proizvod">
+        </form>
       </td>
     </tr>
     @endforeach

@@ -57,6 +57,7 @@ class ProductController extends Controller
 
         $product->save();
 
+        session()->flash('message','Uredili ste proizvod!');
 
         /*$input = $request->all();
 
@@ -68,6 +69,14 @@ class ProductController extends Controller
     public function delete(Product $product)
     {
         
+       
+       \Storage::Delete($product->image);
+
+       $product->delete();
+
+       session()->flash('message','Obrisali ste proizvod!');
+
+       return redirect('/home');
     }
 
       

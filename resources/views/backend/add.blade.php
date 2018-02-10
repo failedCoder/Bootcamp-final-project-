@@ -2,15 +2,16 @@
 
 @section('content')
 <br>
-<br>
+
 
 <div class="col-md-4 offset-md-4 ">
 
-  @if ($flash=session('message'))
-    <div class="alert alert-success" role="alert">
-      {{ $flash }}
-    </div>    
-  @endif
+<button type="button" class="close" aria-label="Close">
+  <a href="/home">
+  <span aria-hidden="true">&times;</span>
+  </a>
+</button>
+  
   <p class="h3">Dodaj proizvod:</p>
   <hr>
 
