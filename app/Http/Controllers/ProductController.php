@@ -31,7 +31,7 @@ class ProductController extends Controller
     		'category' => request('category'),
     		'image' => $path,
     	]);
-    	//dd($image->path);
+    	
 
 
     	session()->flash('message','Dodali ste novi proizvod!');
@@ -39,9 +39,35 @@ class ProductController extends Controller
     	return redirect('/home');    
     }
 
-    public function edit()
+    public function edit(AddProductRequest $request,Product $product)
     {
+        $product->name = request('name');
+        $product->price = request('price');
+        $product->description = request('description');
+        $product->category = request('category');
 
+        \Storage::Delete($product->image);
+
+        $image = $request->file('image');
+        $ext = $image->extension();
+        $name = request('name').'.';
+        $path=$image->storeAs('products',$name.$ext);
+
+        $product->image = $path;
+
+        $product->save();
+
+
+        /*$input = $request->all();
+
+        $product->fill($input)->save();*/
+
+        return redirect('/home');
+    }
+
+    public function delete(Product $product)
+    {
+        
     }
 
       

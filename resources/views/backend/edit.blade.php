@@ -9,9 +9,11 @@
 
 	<p class="h3">Uredi proizvod:</p>
 	<hr>
-	<form method="POST" action="" enctype="multipart/form-data">
+	<form method="POST" enctype="multipart/form-data">
 
    {{ csrf_field() }}
+
+   <input name="_method" type="hidden" value="PATCH">
 
 
 	<div class="form-group">
