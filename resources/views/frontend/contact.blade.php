@@ -5,7 +5,11 @@
 
 
 <div class="col-md-4 offset-md-4 ">
-
+@if ($flash=session('message'))
+<div class="alert alert-success" role="alert">
+    {{ $flash }}
+</div>    
+@endif
 <button type="button" class="close" aria-label="Close">
   <a href="/">
   <span aria-hidden="true">&times;</span>
@@ -15,7 +19,7 @@
   <p class="h3">Pošaljite nam poruku:</p>
   <hr>
 
-	<form method="POST" action="/pošalji" enctype="multipart/form-data">
+	<form method="POST">
 
    {{ csrf_field() }}
 
@@ -39,9 +43,9 @@
     	<label for="usr">Email:</label>
   		<input type="email" class="form-control" id="usr" name="email" required>
 
-      @if ($errors->has('price'))
+      @if ($errors->has('email'))
         <div class="alert alert-danger" role="alert">
-          {{ $errors->first('price') }}
+          {{ $errors->first('email') }}
         </div>
       @endif
 
@@ -52,9 +56,9 @@
   		<label for="comment">Poruka:</label>
   		<textarea class="form-control" rows="5" id="comment" name="message" required></textarea>
 
-      @if ($errors->has('description'))
+      @if ($errors->has('message'))
         <div class="alert alert-danger" role="alert">
-          {{ $errors->first('description') }}
+          {{ $errors->first('message') }}
         </div>
       @endif
 

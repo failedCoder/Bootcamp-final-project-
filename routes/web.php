@@ -23,6 +23,8 @@ Route::get('/ponuda','ProductController@index');
 
 Route::get('/kontakt','ContactUsController@index');
 
+Route::post('/kontakt','ContactUsController@store');
+
 
 
 
