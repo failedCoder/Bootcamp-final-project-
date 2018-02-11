@@ -31,6 +31,9 @@
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Utopija</h1>
         <p class="lead">Genericka pozdravna poruka,opis stranice,ponude il tak nesto slicno bla bla bla bla</p>
+
+        @include('frontend.partials.carousel')
+
         <p class="lead">
           <a href="/ponuda" class="btn btn-lg btn-secondary">Pogledajte ponudu</a>
         </p>

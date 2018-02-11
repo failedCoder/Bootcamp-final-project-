@@ -1,7 +1,8 @@
 <?php
 
 Route::get('/', function () {
-    return view('frontend.home');
+	$products = App\Product::all();
+    return view('frontend.home',compact('products'));
 });
 
 Auth::routes();
@@ -20,7 +21,7 @@ Route::delete('home/obriši/{product}','ProductController@delete');
 
 Route::get('/ponuda','ProductController@index');
 
-Route::get('/kontakt','ContactController@index');
+Route::get('/kontakt','ContactUsController@index');
 
 
 
