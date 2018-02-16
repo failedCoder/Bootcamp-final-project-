@@ -1,6 +1,12 @@
 @extends('frontend.master')
 
 @section('content')
-<h1>Proizvodi</h1
+
+@foreach($products as $product)
+<!--<img src="{{asset('storage/app/public/' .$product->image)}}">-->
+<img src="storage/{{$product->image}}">
+<br>
+@endforeach
 
 @endsection
+

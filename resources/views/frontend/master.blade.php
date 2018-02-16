@@ -17,14 +17,15 @@
 
 <body>
 
-	  <nav class="navbar navbar-dark bg-secondary">
-	  	<div class="justify-content-start">
-        <a class="navbar-brand" href="/">Utopija</a>
-        <a class="btn btn-secondary btn-sm " href="/ponuda" role="button">Ponuda <i class="fas fa-arrow-alt-circle-right"></i>
-        </div>	
-		<a class="btn btn-secondary btn-sm " href="/kontakt" role="button">Kontaktirajte nas <i class="far fa-envelope"></i></a>	
-      	  
-    		                       
+	  <nav class="navbar navbar-dark bg-secondary ">
+	
+	  	
+       
+        <a class="btn btn-secondary btn-sm  mr-auto" href="/ponuda" role="button">Ponuda <i class="fas fa-arrow-alt-circle-right"></i>
+       </a>
+   <a class="navbar-brand align-middle mx-auto  " href="/">Utopija</a>
+		<a class="btn btn-secondary btn-sm  ml-auto " href="/kontakt" role="button">Kontaktirajte nas <i class="far fa-envelope"></i></a>	
+      	                      
       </nav>
 
 	@yield('content')

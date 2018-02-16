@@ -10,17 +10,21 @@ use App\Http\Requests\AddProductRequest;
 
 class ProductController extends Controller
 {
+
     public function index()
     {
-    	return view('frontend.index');
+        $products = Product::all();
+    	return view('frontend.index',compact('products'));
     }
 
     public function add(AddProductRequest $request)
     {
     	$image = $request->file('image');
 		$ext = $image->extension();
-		$name = request('name').'.';
+		$rawName = request('name').'.';
+        $name = str_replace(' ', '', $rawName);
 		$path=$image->storeAs('products',$name.$ext);
+
 
 
 
