@@ -19,7 +19,7 @@
   <p class="h3">Pošaljite nam poruku:</p>
   <hr>
 
-	<form method="POST">
+	<form method="POST" action="/kontakt">
 
    {{ csrf_field() }}
 
@@ -54,7 +54,7 @@
 	<div class="form-group">
 
   		<label for="comment">Poruka:</label>
-  		<textarea class="form-control" rows="5" id="comment" name="message" required></textarea>
+  		<textarea class="form-control" rows="5" id="comment" name="message" required>Pozdrav,imam upit u vezi:  {{$product->name}}</textarea>
 
       @if ($errors->has('message'))
         <div class="alert alert-danger" role="alert">

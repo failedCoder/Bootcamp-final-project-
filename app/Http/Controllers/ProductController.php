@@ -83,6 +83,11 @@ class ProductController extends Controller
        return redirect('/home');
     }
 
+    public function show(Product $product)
+    {
+        return view('frontend.details',compact('product'));
+    }
+
       
    
 }

@@ -23,30 +23,12 @@ class HomeController extends Controller
 
     public function editForm(Product $product)
     {
-        $categories = 
-        [
-            'Narukvice',
-            'Naušnice',
-            'Ogrlice',
-            'Dekoracije',
-            'Ostalo',
-        ]; 
-
-        return view('backend.edit',compact('product','categories'));
+        return view('backend.edit',compact('product'));
     }
 
     public function showAddForm()
     {
-        
-        $categories = 
-        [
-            'Narukvice',
-            'Naušnice',
-            'Ogrlice',
-            'Dekoracije',
-            'Ostalo',
-        ]; 
-        return view('backend.add',compact('categories'));
+        return view('backend.add');
     }
 
 }

@@ -25,16 +25,15 @@ Route::get('/kontakt','ContactUsController@index');
 
 Route::post('/kontakt','ContactUsController@store');
 
+Route::get('/ponuda/{product}','ProductController@show');
+
+Route::get('/kontakt/{product}','ContactUsController@indexSpecific');
+
 /*TO DO:
--POPRAVI NAVBAR NA FRONTENDU
--POPIS KATEGORIJA NA FRONTENDU SAMO U JEDNU VARIABLU
--NAPRVAVI PONUDU SA CARDOVIMA
--DODAJ KATEGORIJE
+-DODAJ KATEGORIJE/razvrstavanje
 -PAGINACIJA
 -PREGLEDAVANJE I BRISANJE PORUKA NA BACKENDU
 -RESPONZIVNI DIZAJN
--KONTAKT SA DEFAULT VRIJEDNOSTIMA ZA PROIZVOD
--DETALJI O PROIZVODU
 -PROVJERIT SITUACIJU KAD JE SVE PRAZNO I DODAT PORUKE PO POTREBI
 
 */
@@ -42,3 +41,4 @@ Route::post('/kontakt','ContactUsController@store');
 
 
 //admin@mail.net qwertz1234
+

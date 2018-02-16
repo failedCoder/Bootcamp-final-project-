@@ -35,12 +35,14 @@
         <hr>
         @include('frontend.partials.carousel')
         <hr>
-        <p class="lead">
+        <div class="btn-group-vertical">
+        
           <a href="/ponuda" class="btn btn-lg btn-secondary">Pogledajte ponudu</a>
-        </p>
-        <p class="lead">
+          <br>
+        
           <a href="/kontakt" class="btn btn-lg btn-secondary">Kontaktirajte nas</a>
-        </p>
+        
+      </div>
       </main>
 
       <footer class="mastfoot mt-auto">

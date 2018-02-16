@@ -8,6 +8,8 @@ use App\Http\Requests\ContactRequest;
 
 use App\ContactUs;
 
+use App\Product;
+
 use App\Mail\ContactUsMail;
 
 class ContactUsController extends Controller
@@ -32,5 +34,10 @@ class ContactUsController extends Controller
     	session()->flash('message','Poruka je poslana!');
 
     	return back();
+    }
+
+    public function indexSpecific(Product $product)
+    {
+        return view('frontend.contactSpecific',compact('product'));
     }
 }
