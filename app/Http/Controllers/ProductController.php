@@ -13,7 +13,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = Product::paginate(6);
+        $products = Product::orderBy('created_at', 'desc')->paginate(6);
     	return view('frontend.index',compact('products'));
     }
 
@@ -86,7 +86,7 @@ class ProductController extends Controller
 
     public function sort($category)
     {   
-       $products =  Product::where('category','=',$category)->paginate(6);
+       $products =  Product::where('category','=',$category)->latest()->paginate(6);
        
        return view('frontend.index',compact('products')); 
     }

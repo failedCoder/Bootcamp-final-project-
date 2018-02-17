@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $products = Product::all();
+        $products = Product::orderBy('created_at', 'desc')->paginate(8);
 
         return view('backend.index',compact('products'));
     } 

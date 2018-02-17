@@ -9,6 +9,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/home/poruke','ContactUsController@show');
+
+Route::delete('home/poruke/{message}','ContactUsController@delete');
+
 Route::get('home/dodaj','HomeController@showAddForm');
 
 Route::post('home/dodaj','ProductController@add');
@@ -32,12 +36,10 @@ Route::get('/kontakt/{product}','ContactUsController@indexSpecific');
 Route::get('/ponuda/kategorija/{category}','ProductController@sort');
 
 /*TO DO:
--PAGINACIJA/backend
--PREGLEDAVANJE I BRISANJE PORUKA NA BACKENDU
--RESPONZIVNI DIZAJN
--PROVJERIT SITUACIJU KAD JE SVE PRAZNO I DODAT PORUKE PO POTREBI
--LATEST
 -alt
+-PROVJERIT SITUACIJU KAD JE SVE PRAZNO I DODAT PORUKE PO POTREBI
+-RESPONZIVNI DIZAJN
+
 */
 
 

@@ -40,4 +40,20 @@ class ContactUsController extends Controller
     {
         return view('frontend.contactSpecific',compact('product'));
     }
+
+    public function show()
+    {
+        $messages = ContactUs::orderBy('created_at', 'desc')->paginate(10);
+
+        return view('backend.showMessages',compact('messages'));
+    }
+
+    public function delete(ContactUs $message)
+    {
+       $message->delete();
+
+       session()->flash('message','Obrisali ste poruku!');
+
+       return redirect('/home/poruke');
+    }
 }

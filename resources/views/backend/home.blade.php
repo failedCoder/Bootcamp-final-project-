@@ -20,16 +20,21 @@
 
 <body>
     <nav class="navbar navbar-dark bg-secondary">
+
         <a class="navbar-brand" href="/home">Utopija</a>
-        
+
+        <a class="btn btn-secondary btn-sm" href="/home/poruke" role="button">
+          <i class="fas fa-envelope"></i> Poruke
+        </a>
+
         <form action="{{ route('logout') }}" method="POST">
             {{ csrf_field() }}
-            <input class="btn btn-secondary btn-sm" type="submit" name="logout" value="Logout">
+            <input class="btn btn-secondary btn-sm" type="submit" name="logout" value="Logout"> 
         </form>                               
     </nav>
    
       @yield('content')                              
-
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 
 </html>
