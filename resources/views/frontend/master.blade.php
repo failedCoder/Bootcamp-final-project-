@@ -31,18 +31,23 @@
       	<li class="nav-item nav-link active" style="background-color: #D8D8D8">
       		<strong>Kategorije:</strong>
       	</li>
+      	<li class="nav-item ">
+    		<a class="nav-link active bg-light" href="/ponuda">Sve</a>
+  		</li>
       	@foreach($categories as $category)
   		  <li class="nav-item ">
-    		<a class="nav-link active bg-light" href="#">{{$category}}</a>
+    		<a class="nav-link active bg-light" href="/ponuda/kategorija/{{$category}}">{{$category}}</a>
   		</li>
   		@endforeach
 	  </ul>
 
 	@yield('content')
 
-	  <button onclick="topFunction()" class="btn btn-outline-secondary " style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;">
+
+	<button onclick="topFunction()" class="btn btn-outline-secondary btn-sm" 
+		style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;">
 	  Nazad na vrh
-	  </button>
+	</button>
 	<script type="text/javascript">
 		function topFunction() {
     		document.body.scrollTop = 0; // For Safari

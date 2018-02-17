@@ -29,13 +29,15 @@ Route::get('/ponuda/{product}','ProductController@show');
 
 Route::get('/kontakt/{product}','ContactUsController@indexSpecific');
 
+Route::get('/ponuda/kategorija/{category}','ProductController@sort');
+
 /*TO DO:
--DODAJ KATEGORIJE/razvrstavanje
--PAGINACIJA
+-PAGINACIJA/backend
 -PREGLEDAVANJE I BRISANJE PORUKA NA BACKENDU
 -RESPONZIVNI DIZAJN
 -PROVJERIT SITUACIJU KAD JE SVE PRAZNO I DODAT PORUKE PO POTREBI
-
+-LATEST
+-alt
 */
 
 

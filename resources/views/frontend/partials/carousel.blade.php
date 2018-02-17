@@ -7,6 +7,7 @@
 
   <div class="carousel-inner">
     @foreach($products as $product)
+
     @if($loop->first)
     <div class="carousel-item active" style=" width:100%; height: 400px !important;">
     @else
@@ -17,6 +18,10 @@
         <h5 style="color:black">{{$product->name}}</h5>
       </div>
     </div>
+
+    @if ($loop->iteration == 5)
+        @break
+    @endif
   
     @endforeach 
  

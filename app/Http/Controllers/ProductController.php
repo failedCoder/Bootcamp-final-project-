@@ -13,7 +13,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = Product::all();
+        $products = Product::paginate(6);
     	return view('frontend.index',compact('products'));
     }
 
@@ -63,10 +63,6 @@ class ProductController extends Controller
 
         session()->flash('message','Uredili ste proizvod!');
 
-        /*$input = $request->all();
-
-        $product->fill($input)->save();*/
-
         return redirect('/home');
     }
 
@@ -86,6 +82,13 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         return view('frontend.details',compact('product'));
+    }
+
+    public function sort($category)
+    {   
+       $products =  Product::where('category','=',$category)->paginate(6);
+       
+       return view('frontend.index',compact('products')); 
     }
 
       
