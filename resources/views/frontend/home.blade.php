@@ -30,7 +30,7 @@
 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Utopija</h1>
-        <p class="lead">Genericka pozdravna poruka,opis stranice,ponude il tak nesto slicno bla bla bla bla</p>
+        <p class="lead">Hand made shop</p>
 
         <hr>
         @include('frontend.partials.carousel')

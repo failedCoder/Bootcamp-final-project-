@@ -23,7 +23,7 @@
        
         <a class="btn btn-secondary btn-sm  mr-auto" href="/ponuda" role="button">Ponuda <i class="fas fa-arrow-alt-circle-right"></i>
        </a>
-   <a class="navbar-brand align-middle mx-auto  " href="/">Utopija</a>
+   <a class="navbar-brand align-middle mx-auto  " href="/"><i class="fab fa-uniregistry"></i></a>
 		<a class="btn btn-secondary btn-sm  ml-auto " href="/kontakt" role="button">Kontaktirajte nas <i class="far fa-envelope"></i></a>	
       	                      
       </nav>

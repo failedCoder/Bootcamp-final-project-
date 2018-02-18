@@ -35,14 +35,6 @@ Route::get('/kontakt/{product}','ContactUsController@indexSpecific');
 
 Route::get('/ponuda/kategorija/{category}','ProductController@sort');
 
-/*TO DO:
--alt
--PROVJERIT SITUACIJU KAD JE SVE PRAZNO I DODAT PORUKE PO POTREBI
--RESPONZIVNI DIZAJN
-
-*/
-
-
 
 //admin@mail.net qwertz1234
 
