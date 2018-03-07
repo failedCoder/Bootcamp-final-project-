@@ -2,7 +2,7 @@
 
 <div class="gallery">
   <a target="_blank" href="fjords.jpg">
-    <img src="<img src="https://image.ibb.co/hnmnDS/utopija_Store.png" alt="utopija_Store" border="0">" alt="Fjords" width="300" height="200">
+    <img src="https://image.ibb.co/hnmnDS/utopija_Store.png" alt="utopija_Store" border="0"> alt="utopija_Store" border="0">" alt="Fjords" width="300" height="200">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
