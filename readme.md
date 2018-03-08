@@ -1,11 +1,9 @@
-# Utopija
+<h1 align="center">Utopija </h1>
 
-<h1 align="center">vsavs </h1>
-
-<p>Final project for my Algebra PHP education.</p>
-<p>On the frontend users can view the items on offer and contact the admin via email form.</p>
-<p>On the backend admin can add,edit or delete products.It is also possible to view and delete email messages.</p>
-<p>Admin has to be made through tinker,as there is no registration form available,because the page is intended to have only one admin.</p>
+<p align="center">Final project for my Algebra PHP education.</p>
+<p align="center">On the frontend users can view the items on offer and contact the admin via email form.</p>
+<p align="center">On the backend admin can add,edit or delete products.It is also possible to view and delete email messages.</p>
+<p align="center">Admin has to be made through tinker,as there is no registration form available,because the page is intended to have only one admin.</p>
 <hr>
 
 <p align="center"><img src="https://image.ibb.co/jVkhxn/utopija_Index.png" alt="utopija_Index" border="1"></p>
