@@ -8,7 +8,7 @@
 <br>
 
 <h3 align="center">Homepage</h3>
-<p align="center">Homepage with bootstrap carousel elemnent</p>
+<p align="center">Homepage with bootstrap <a href="https://getbootstrap.com/docs/4.0/components/carousel/#with-controls">carousel</a> elemnent</p>
 <p align="center"><img src="https://image.ibb.co/jVkhxn/utopija_Index.png" alt="utopija_Index" border="1"></p>
 <br>
 <h3 align="center">Products page</h3>
