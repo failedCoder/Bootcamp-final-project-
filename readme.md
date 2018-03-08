@@ -8,18 +8,22 @@
 <br>
 
 <h3 align="center">Homepage</h3>
+<p align="center">Homepage with bootstrap carousel elemnent</p>
 <p align="center"><img src="https://image.ibb.co/jVkhxn/utopija_Index.png" alt="utopija_Index" border="1"></p>
 <br>
 <h3 align="center">Products page</h3>
+<p align="center">Products page with pagination and categories</p>
 <p align="center"><img src="https://image.ibb.co/fKCHV7/utopija_Store.png" alt="utopija_Store" border="0"></p>
 <br>
 <h3 align="center">Contact page</h3>
+<p align="center">Contact form that sends mail to admin via MailGun service</p>
 <p align="center"><img src="https://image.ibb.co/f0bNxn/utopija_Contact.png" alt="utopija_Contact" border="0"></p>
 <br>
 <h3 align="center">Login page</h3>
 <p align="center"><img src="https://image.ibb.co/kfwpcn/utopija_Login.png" alt="utopija_Login" border="0"></p>
 <br>
 <h3 align="center">Backend homepage</h3>
+<p align="center">Backend homepage that allows adding new,editing and deleting the existing products</p>
 <p align="center"><img src="https://image.ibb.co/gnbpcn/utopija_Backend.png" alt="utopija_Backend" border="0">
 </p>
 <br>
