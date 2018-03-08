@@ -19,7 +19,7 @@
 <p align="center">Contact form that sends mail to admin via MailGun service</p>
 <p align="center"><img src="https://image.ibb.co/f0bNxn/utopija_Contact.png" alt="utopija_Contact" border="0"></p>
 <br>
-<h3 align="center">Login page</h3>
+<h3 align="center">Login form</h3>
 <p align="center"><img src="https://image.ibb.co/kfwpcn/utopija_Login.png" alt="utopija_Login" border="0"></p>
 <br>
 <h3 align="center">Backend homepage</h3>
@@ -27,7 +27,7 @@
 <p align="center"><img src="https://image.ibb.co/gnbpcn/utopija_Backend.png" alt="utopija_Backend" border="0">
 </p>
 <br>
-<h3 align="center">Add product page</h3>
+<h3 align="center">Add product form</h3>
 <p align="center"><img src="https://image.ibb.co/cxG5Hn/utopija_Add.png" alt="utopija_Add" border="0"></p>
 
 
