@@ -1,6 +1,6 @@
 ## Utopija 
 
-<p>Final project for my Algebra PHP education.</p>
+<p>Final project for my Algebra PHP/LARAVEL boot camp.</p>
 <p>On the frontend users can view the items on offer and contact the admin via email form.</p>
 <p>On the backend admin can add,edit or delete products.It is also possible to view and delete email messages.</p>
 <p>Admin has to be made through tinker,as there is no registration form available,because the page is intended to have only one admin.</p>
